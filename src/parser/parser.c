@@ -64,6 +64,7 @@ static Ny_Type_ID lookup_type(Ny_Module *mod, Ny_String name) {
     if (ny_str_eq_cstr(name, "i128")) return NY_TYPE_I128;
     if (ny_str_eq_cstr(name, "f16"))  return NY_TYPE_F16;
     if (ny_str_eq_cstr(name, "f32"))  return NY_TYPE_F32;
+    if (ny_str_eq_cstr(name, "f64"))  return NY_TYPE_F64;
     if (ny_str_eq_cstr(name, "ptr"))    return NY_TYPE_PTR;
     if (ny_str_eq_cstr(name, "string")) return NY_TYPE_PTR;
 

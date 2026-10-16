@@ -360,15 +360,6 @@ static void lower_instruction(X86_Block *xblk, const Ny_Machine_Function *mfn,
                 .ops = { x86_op_reg(def_r) }
             };
             x86_block_append_inst(xblk, setcc_inst);
-
-            X86_Instruction and_inst = {
-                .opcode = X86_OPC_AND,
-                .size = def_r.size,
-                .cond = X86_COND_NONE,
-                .op_count = 2,
-                .ops = { x86_op_reg(def_r), x86_op_imm(1) }
-            };
-            x86_block_append_inst(xblk, and_inst);
         }
         break;
     }
