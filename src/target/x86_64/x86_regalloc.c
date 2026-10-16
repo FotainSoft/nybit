@@ -16,7 +16,7 @@ static inline bool bitset_test(const uint64_t *bits, size_t words_per_block, siz
 }
 
 static const X86_Phys_Reg s_sysv_gpr_caller_saved[] = {
-    X86_R9, X86_R8, X86_RCX, X86_RDX, X86_RSI, X86_RDI, X86_RAX
+    X86_R9, X86_R8, X86_RCX, X86_RSI, X86_RDI
 };
 
 static const X86_Phys_Reg s_sysv_gpr_callee_saved[] = {
@@ -24,7 +24,7 @@ static const X86_Phys_Reg s_sysv_gpr_callee_saved[] = {
 };
 
 static const X86_Phys_Reg s_win64_gpr_caller_saved[] = {
-    X86_R9, X86_R8, X86_RDX, X86_RCX, X86_RAX
+    X86_R9, X86_R8, X86_RCX
 };
 
 static const X86_Phys_Reg s_win64_gpr_callee_saved[] = {
